@@ -192,10 +192,10 @@ class Examples extends MY_Controller
 	{
 		// Customize this array for your user
 		$user_data = [
-			'username'   => 'skunkbot',
-			'passwd'     => 'PepeLePew7',
-			'email'      => 'skunkbot@example.com',
-			'auth_level' => '1', // 9 if you want to login @ examples/index.
+			'username'   => 'quasar',
+			'passwd'     => 'Jimjam241',
+			'email'      => 'quenginedev@gmail.com',
+			'auth_level' => '9', // 9 if you want to login @ examples/index.
 		];
 
 		$this->is_logged_in();
@@ -523,7 +523,7 @@ class Examples extends MY_Controller
 					$.ajax({
 						type: 'post',
 						cache: false,
-						url: '" . site_url('examples/ajax_attempt_login', $link_protocol ) . "',
+						url: '" . site_url('/examples/ajax_attempt_login', $link_protocol ) . "',
 						data: {
 							'login_string': $('#login_string').val(),
 							'login_pass': $('#login_pass').val(),

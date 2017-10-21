@@ -1,3 +1,4 @@
-# MAKE SURE TO LEAVE THE DENY LIST AT THE TOP OF THE FILE !!!
-# BEGIN DENY LIST --
-# END DENY LIST --
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L]
